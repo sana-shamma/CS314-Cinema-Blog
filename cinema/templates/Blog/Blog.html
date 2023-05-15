@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+      body{
+            background-color: black;
+            background-image: url("https://thumbs.dreamstime.com/z/old-filmstrip-6810901.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+</style>
+<br>
+<main class="container">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+      <div class="col-md-12 px-0">
+        <h1 class="display-4 fst-italic text-center">Welcome</h1>
+        <p class="lead my-3 rounded">
+          Our movie blog is your go-to source for all things related to the world of film and television.
+           We've got the latest news, reviews, and insights on all the hottest releases, as well as classic
+          films and TV shows that stand the test of time. Our team of writers is passionate about movies and 
+          TV and is dedicated to bringing you the best content possible. Whether you're looking for recommendations 
+          on what to watch or want to stay up-to-date on the latest industry trends, our blog has got you covered.
+           So grab some popcorn, sit back, and let's dive into the exciting world of movies and TV together!
+        </p>
+      </div>
+    </div>
+{% for x in post.all %}  
+    <div class="row mb-2  d-flex flex-wrap ">
+      <div class="col-md-12">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger text-white">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">{{x.title}}</h3>
+            <div class="mb-1 text-black">{{x.date}}</div>
+            <p class="card-text mb-auto">{{x.text}}</p>
+            <br>
+            <a href="#" class="stretched-link text-black">Continue reading</a>
+          </div>
+        </div>
+      </div>
+      </div>
+{%endfor%}
+{% endblock %}

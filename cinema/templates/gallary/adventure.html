@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gallary/style.css' %}">
+    <title>Baby</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            background-image: url("https://cdn1.vectorstock.com/i/1000x1000/00/10/theater-concept-classic-scene-with-vector-20650010.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .page{
+            margin-top: 70px;
+
+        }
+    </style>
+    <div class="page">
+        <img width="400px" height="400px" id="image1" src="{% static 'gallary/adventure/adventure1.jpg'  %}"  />
+        <img width="400px" height="400px" id="image2" src="{% static 'gallary/adventure/adventure2.jpg'  %}"  />
+        <img width="400px" height="400px" id="image3" src="{% static 'gallary/adventure/adventure3.jpg'  %}"  />
+        <img width="400px" height="400px" id="image4" src="{% static 'gallary/adventure/adventure4.jpg'  %}"  />
+        <img width="400px" height="400px" id="image5" src="{% static 'gallary/adventure/adventure5.jpg'  %}"  />
+        <img width="400px" height="400px" id="image6" src="{% static 'gallary/adventure/adventure6.jpg'  %}"  />
+        <img width="400px" height="400px" id="image7" src="{% static 'gallary/adventure/adventure7.jpg'  %}"  />
+        <img width="400px" height="400px" id="image7" src="{% static 'gallary/adventure/adventure8.jpg'  %}"  />
+        <img width="400px" height="400px" id="image7" src="{% static 'gallary/adventure/adventure9.jpg'  %}"  />
+    </div>
+</body>
+</html>
+{% endblock %}

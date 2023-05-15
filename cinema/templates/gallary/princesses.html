@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gallary/style.css' %}">
+    <title>Country</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            background-image: url("https://cdn1.vectorstock.com/i/1000x1000/00/10/theater-concept-classic-scene-with-vector-20650010.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .page{
+            margin-top: 70px;
+
+        }
+    </style>
+    <div class="page">
+        <img  id="image1" src="{% static 'gallary/princesses/princesses1.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses2.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses3.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses4.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses5.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses6.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses7.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses8.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/princesses/princesses9.jpg'  %}"  />
+    </div>
+</body>
+</html>
+{% endblock %}

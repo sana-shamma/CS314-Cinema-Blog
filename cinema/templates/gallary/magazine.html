@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gallary/style.css' %}">
+    <title>Product</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            background-image: url("https://cdn1.vectorstock.com/i/1000x1000/00/10/theater-concept-classic-scene-with-vector-20650010.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .page{
+            margin-top: 70px;
+
+        }
+    </style>
+    <div class="page">
+        <img  id="image1" src="{% static 'gallary/magazine/magazine1.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine2.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine3.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine4.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine5.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine6.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine7.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine8.jpg'  %}"  />
+        <img  id="image1" src="{% static 'gallary/magazine/magazine9.jpg'  %}"  />
+    </div>
+</body>
+</html>
+{% endblock %}
